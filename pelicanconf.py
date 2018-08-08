@@ -42,8 +42,8 @@ PLUGINS = ["render_math"]
 
 STATIC_PATHS = [
     'images',
-    'extra/favicon.ico'
+    'extra/favicon.ico',
 ]
 EXTRA_PATH_METADATA = {
-    'extra/favicon.ico': {'path': 'favicon.ico'}
+    'extra/favicon.ico': {'path': 'extra/favicon.ico'},
 }
