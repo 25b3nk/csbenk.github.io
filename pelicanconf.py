@@ -21,12 +21,10 @@ AUTHOR_FEED_RSS = 'feeds/%s.rss.xml'
 RSS_FEED_SUMMARY_ONLY = False
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Another social link', '#'),)
+LINKS = (('Pelican', 'http://getpelican.com/'),)
 
 # Social widget
-SOCIAL = (('Connect on Linkedin', 'https://www.linkedin.com/in/bhaskar-chakradhar/'),
-          ('Another social link', '#'),)
+SOCIAL = (('Connect on Linkedin', 'https://www.linkedin.com/in/bhaskar-chakradhar/'),)
 
 DEFAULT_PAGINATION = 10
 
@@ -45,5 +43,5 @@ STATIC_PATHS = [
     'extra/favicon.ico',
 ]
 EXTRA_PATH_METADATA = {
-    'extra/favicon.ico': {'path': 'extra/favicon.ico'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
 }
