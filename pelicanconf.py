@@ -39,3 +39,11 @@ DEFAULT_PAGINATION = 10
 # Add-ons
 PLUGIN_PATHS = ['/home/csb/path/to/projects/my_blog/pelican-plugins']
 PLUGINS = ["render_math"]
+
+STATIC_PATHS = [
+    'images',
+    'extra/favicon.ico'
+]
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
