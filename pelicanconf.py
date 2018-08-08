@@ -15,7 +15,7 @@ DEFAULT_LANG = u'en'
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None    
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = 'feeds/%s.rss.xml'
 RSS_FEED_SUMMARY_ONLY = False
@@ -33,4 +33,11 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
+
+# Themes
+# THEME = "/home/csb/path/to/projects/my_blog/pelican-themes/blue-penguin"
+
+# Add-ons
+PLUGIN_PATHS = ['/home/csb/path/to/projects/my_blog/pelican-plugins']
+PLUGINS = ["render_math"]
