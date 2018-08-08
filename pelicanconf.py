@@ -21,7 +21,8 @@ AUTHOR_FEED_RSS = 'feeds/%s.rss.xml'
 RSS_FEED_SUMMARY_ONLY = False
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'))
+LINKS = (('Pelican', 'http://getpelican.com/'),
+         ('Another social link', '#'),)
 
 # Social widget
 SOCIAL = (('Connect on Linkedin', 'https://www.linkedin.com/in/bhaskar-chakradhar/'),
