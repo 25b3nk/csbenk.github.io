@@ -21,7 +21,7 @@ Tensors are similar to *numpy arrays*, difference being that the tensors can be 
 You can operate on these tensors like a matrix, one can add, subtract, multiply, perform scalar multiplication/division on them. These operations help in creating the *graph* which is the core of PyTorch.  
 The tensors can be converted into numpy arrays directly with a  simple command *add code here*. The converted numpy arrays occupy the same space as tensors, so any changes made to these numpy arrays will result in changes to the tensors. Basically it is like accessing the same values as *tesnors* or as *numpy arrays*, it is left to the user.  
 Tensors can be moved to GPU using simple command *add code here*.  
-**Autograd: Automatic differentiation**
+**Autograd: Automatic differentiation**  
 Central to all neural networks in PyTorch is `autograd` package. This package provides automatic differentiation for all operations on Tensors. It is a define-by-run framework, which means that your backprop is defined by how your code is run, and that every single iteration can be different.  
 In tensors, one can set the `requires_grad` attribute as `True`, this starts to track all the operations on it. After the required **Graph** is created, i.e, the architecture and the connections/computations are completed, one can run `.backward()` and have all the gradients computed automatically. The gradient for this tensor will be accumulated into `.grad` attribute.  
 For evaluating a model, one can turn off the tracking by wrapping one's code block in `with torch.no_grad():`.  
