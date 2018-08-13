@@ -38,10 +38,22 @@ DEFAULT_PAGINATION = 10
 PLUGIN_PATHS = ['/home/csb/path/to/projects/my_blog/pelican-plugins']
 PLUGINS = ["render_math"]
 
-STATIC_PATHS = [
-    'images',
-    'extra/favicon.ico',
-]
+# STATIC_PATHS = [
+#     'images',
+#     'extra/favicon.ico',
+# ]
+# EXTRA_PATH_METADATA = {
+#     'extra/favicon.ico': {'path': 'favicon.ico'},
+# }
+STATIC_PATHS = ['extras', 'images']
 EXTRA_PATH_METADATA = {
-    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extras/CNAME': {'path': 'CNAME'},
+    'extras/android-icon-192x192.png': {'path': 'android-icon-192x192.png'},
+    'extras/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
+    'extras/browserconfig.xml': {'path': 'browserconfig.xml'},
+    'extras/favicon-16x16.png': {'path': 'favicon-16x16.png'},
+    'extras/favicon-32x32.png': {'path': 'favicon-32x32.png'},
+    'extras/favicon.ico': {'path': 'favicon.ico'},
+    'extras/manifest.json': {'path': 'manifest.json'},
+    'extras/mstile-150x150.png': {'path': 'mstile-150x150.png'},
 }
