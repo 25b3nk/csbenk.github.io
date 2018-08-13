@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>CSB - Bhaskar C</title><link>/</link><description></description><lastBuildDate>Wed, 08 Aug 2018 15:30:00 +0530</lastBuildDate><item><title>My understanding of PyTorch</title><link>/understand-torch.html</link><description>&lt;p&gt;Yo,&lt;br&gt;
+<rss version="2.0"><channel><title>CSB - Bhaskar C</title><link>/</link><description></description><lastBuildDate>Mon, 13 Aug 2018 15:30:00 +0530</lastBuildDate><item><title>My understanding of PyTorch</title><link>/understand-torch.html</link><description>&lt;p&gt;Yo,&lt;br&gt;
 This will be blog on my understanding on pytorch. I am following the &lt;a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html"&gt;official tutorial&lt;/a&gt; for the same.&lt;br&gt;
 First of all, let me tell you that I took two days to finish the 60 minute blitz. To be honest, I was distracted and had other work too. And &lt;a href="http://soumith.ch/"&gt;Soumith Chintala&lt;/a&gt; has explained it in the best possible way. I loved the tutorial and now I feel like I can start off a new project with PyTorch without any fear.&lt;br&gt;
 There are four parts to the tutorial, namely:

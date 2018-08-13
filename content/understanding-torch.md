@@ -1,6 +1,6 @@
 Title: My understanding of PyTorch
 Date: 2018-08-08 15:01
-Modified: 2018-08-08 15:30
+Modified: 2018-08-13 15:30
 Category: Deep Learning
 Tags: torch, deeplearning
 Slug: understand-torch
