@@ -39,7 +39,25 @@
 <p>tags: <a href="/tag/torch.html">torch</a> <a href="/tag/deeplearning.html">deeplearning</a> </p>
 </footer><!-- /.post-info --><p>Yo,<br>
 This will be blog on my understanding on pytorch. I am following the <a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html">official tutorial</a> for the same.<br>
-First of all, let me tell you that I took two days to finish the 60 minute blitz. To be honest, I was distracted and had other work too. And <a href="http://soumith.ch/">Soumith Chintala</a> has explained it in the best possible way. I loved the tutorial and now I feel like I can start off a new project with PyTorch without any fear.  </p>                </article>
+First of all, let me tell you that I took two days to finish the 60 minute blitz. To be honest, I was distracted and had other work too. And <a href="http://soumith.ch/">Soumith Chintala</a> has explained it in the best possible way. I loved the tutorial and now I feel like I can start off a new project with PyTorch without any fear.<br>
+There are four parts to the tutorial, namely:
+- What is PyTorch?
+- Neural networks
+- Training the classifier
+- Data Parallelism (<em>Optional</em>)  </p>
+<h2><strong>What is PyTorch?</strong></h2>
+<p>Here the author talks about Tensors and operations related to them. He then talks about Autograd function and gradients.<br>
+Tensors are similar to <em>numpy arrays</em>, difference being that the tensors can be <em>loaded into GPU</em> for faster computing. One can create a tensor in many ways, like create one with uninitialized values, random values, zeros or directly feed data.<br>
+You can operate on these tensors like a matrix, one can add, subtract, multiply, perform scalar multiplication/division on them. These operations help in creating the <em>graph</em> which is the core of PyTorch.<br>
+The tensors can be converted into numpy arrays directly with a  simple command <em>add code here</em>. The converted numpy arrays occupy the same space as tensors, so any changes made to these numpy arrays will result in changes to the tensors. Basically it is like accessing the same values as <em>tesnors</em> or as <em>numpy arrays</em>, it is left to the user.<br>
+Tensors can be moved to GPU using simple command <em>add code here</em>.<br>
+<strong>Autograd: Automatic differentiation</strong>
+Central to all neural networks in PyTorch is <code>autograd</code> package. This package provides automatic differentiation for all operations on Tensors. It is a define-by-run framework, which means that your backprop is defined by how your code is run, and that every single iteration can be different.<br>
+In tensors, one can set the <code>requires_grad</code> attribute as <code>True</code>, this starts to track all the operations on it. After the required <strong>Graph</strong> is created, i.e, the architecture and the connections/computations are completed, one can run <code>.backward()</code> and have all the gradients computed automatically. The gradient for this tensor will be accumulated into <code>.grad</code> attribute.<br>
+For evaluating a model, one can turn off the tracking by wrapping one's code block in <code>with torch.no_grad():</code>.<br>
+One can define one's own operations and define the forward pass and backward function. This will be an extension to the autograd operation. Refer this <a href="https://pytorch.org/docs/stable/autograd.html#torch.autograd.Function">link</a>.  </p>
+<h2><strong>Neural Networks</strong></h2>
+<p>The most fascinating thing about PyTorch was the freedom it gave to write your own layers with ease and integrate to the network flow. Also, the dynamic graph is much better than the tensorflow's static graph, i.e, say you have added two tensors, then the output can be viewed without creating a session to run the graph, which is required in tensorflow.</p>                </article>
             </aside><!-- /#featured -->
         <section id="extras" class="body">
                 <div class="blogroll">
